@@ -1,10 +1,10 @@
 import './App.css';
-
+import Day2 from './Day2';
 function App() {
   return (
-    <div className="App">
-    <h1>Hello world</h1>
-    
+    <div>
+    <Day2 />
+    <Day2/>
     </div>
   );
 }
