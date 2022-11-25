@@ -1,13 +1,11 @@
-import './App.css';
-import Day2 from './Day2';
-function App() {
-  return (
-    <div>
-    <Day2/>
-    <Day2/>
-    <Day2/>
-    </div>
-  );
-}
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-export default App;
+import './App.css'
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const element = <Welcome name="Sara" />;
+root.render(element);
