@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
 
-import './App.css'
-
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+export default function App({name}) {
+  const element=<h1>my name is{name}</h1>
+  return (
+    <div>
+      {element}
+      </div>
+  )
 }
-const root = ReactDOM.createRoot(document.getElementById('root'));
-const element = <Welcome name="Sara" />;
-root.render(element);
+
